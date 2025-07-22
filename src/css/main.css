@@ -1,0 +1,31 @@
+.receiptTimeBox {
+    width: 20px;
+    text-align: center;
+}
+
+.moneyBox {
+    width: 40px;
+    text-align: center;
+}
+
+#currentTimeBtn {
+    position: relative;
+    left: 10px;
+}
+
+#chargeDiv {
+    position: relative;
+    top: -48px;
+    left: 80px;
+}
+
+#maxChargeDiv {
+    position: relative;
+    top: -20px;
+}
+
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+} 

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="utf-8">
+        <title>コインパーキング計算機</title>
+        <script src="src/js/message.js"></script>
+        <script src="src/js/main.js"></script>
+        <link rel="stylesheet" href="src/css/main.css" type="text/css">
+    </head>
+
+    <body>
+        <table>
+            <div>
+                <a>入庫時間</a>
+                <br>
+                <form id="receipt" >
+                    <input type="number" min="1" step="10" id="receiptHour" class="receiptTimeBox">
+                    <a id="coron">:</a>
+                    <input type="number" id="receiptMin" class="receiptTimeBox">
+                    <input type="button" value="現在時刻" id="currentTimeBtn" onclick="currentTime()">
+                </form>
+            </div>
+            <br>
+            <div>
+                <div id="useTimeDiv">
+                    <a>利用時間</a>
+                    <br>
+                    <a><input type="number" id="useTime" class="moneyBox">分</a>
+                </div>
+                <div id="chargeDiv">
+                    <a>利用料金</a>
+                    <br>
+                    <a><input type="number" id="charge" class="moneyBox">円</a>
+                </div>
+            </div>
+            <div id="maxChargeDiv">
+                <a>最大料金</a>
+                <br>
+                <a><input type="number" id="maxCharge" class="moneyBox">円</a>
+            </div>
+            <div>
+                <a><input type="button" value="計算" id="calculationBtn" onclick="calculation()"></a>
+            </div>
+        </table>
+        <table border = "1" id="priceList">
+            <!-- ここに表 -->
+            <tr>
+                <th>
+                    時刻
+                </th>
+                <th>
+                    料金
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    00:00
+                </th>
+                <th>
+                    ¥0
+                </th>
+            </tr>
+        </table>
+    </body>
+    
+</html>    
