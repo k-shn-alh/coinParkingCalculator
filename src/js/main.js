@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 入庫時
     receiptHourValue = document.getElementById('receiptHour');
     receiptHourValue.addEventListener('focusout', () => {
+        receiptHourValue = document.getElementById('receiptHour');
         // 整数チェック
         isInteger(receiptHour.value, 'receiptHour');
         // 入力値チェック
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 入庫分
     receiptMinValue = document.getElementById('receiptMin');
     receiptMinValue.addEventListener('focusout', () => {
+        receiptMinValue = document.getElementById('receiptMin');
         // 整数チェック
         isInteger(receiptMin.value, 'receiptMin');
         // 入力値チェック
@@ -35,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 利用時間取得
     useTimeValue = document.getElementById('useTime');
     useTimeValue.addEventListener('focusout', () => {
+        useTimeValue = document.getElementById('useTime');
         // 整数チェック
         isInteger(useTime.value, 'useTime');
         // 入力値チェック
@@ -44,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 利用料金取得
     chargeValue = document.getElementById('charge');
     chargeValue.addEventListener('focusout', () => {
+        chargeValue = document.getElementById('charge');
         // 整数チェック
         isInteger(charge.value, 'charge');
         // 入力値チェック
@@ -53,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 最大料金
     maxChargeValue = document.getElementById('maxCharge');
     maxChargeValue.addEventListener('focusout', () => {
+        maxChargeValue = document.getElementById('maxCharge');
         // 整数チェック
         isInteger(maxChargeValue.value, 'maxCharge');
         // 入力値チェック
